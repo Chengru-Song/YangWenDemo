@@ -1,12 +1,66 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab One
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
 <ion-content>
+  <img src="/assets/banner.jpg" alt="" class="banner-image">
+  <ion-card>
+    <!-- <ion-input placeholder="搜索">
+      <ion-icon name="search"></ion-icon>
+    </ion-input> -->
+    <ion-searchbar showCancelButton="always"></ion-searchbar>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="clear" class="catogory-button">
+            <ion-text color="dark" class="button-content">
+                <ion-icon name="briefcase" class="button-icon"></ion-icon>
+              <ion-text class="button-text">全职招聘</ion-text> 
+            </ion-text> 
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" class="catogory-button">
+            <ion-text color="light">
+              <ion-icon name="home" class="button-icon"></ion-icon>
+              <ion-text class="button-text">租房</ion-text> 
+            </ion-text> 
+          </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button fill="clear" class="catogory-button">
+            <ion-text color="light">
+              <ion-icon name="albums" class="button-icon"></ion-icon>
+              <ion-text class="button-text">兼职</ion-text> 
+            </ion-text> 
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button fill="clear" class="catogory-button">
+            <ion-text color="light">
+              <ion-icon name="car" class="button-icon"></ion-icon>
+              <ion-text class="button-text">二手车</ion-text> 
+            </ion-text> 
+          </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" class="catogory-button">
+              <ion-text color="light">
+                <ion-icon name="shirt" class="button-icon"></ion-icon>
+                <ion-text class="button-text">家政服务</ion-text> 
+              </ion-text> 
+            </ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button fill="clear" class="catogory-button">
+              <ion-text color="light">
+                <ion-icon name="pin" class="button-icon"></ion-icon>
+                <ion-text class="button-text">本地服务</ion-text> 
+              </ion-text> 
+            </ion-button>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
     <ion-card class="welcome-card">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
