@@ -9,7 +9,8 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class Tab2Page {
   currentImage: any;
   constructor(private camera : Camera) {}
-
+  title = '测试title';
+  person = 'person';
   takePicture() {
     const options: CameraOptions = {
       quality: 100,
