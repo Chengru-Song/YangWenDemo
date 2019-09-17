@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
@@ -6,7 +6,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { Tab4Page } from './tab4.page';
-import { AppModule } from '../app.module';
+import { ComponentsModule } from '../componets.module';
+
+
+
 const routes: Routes = [
   {
     path: '',
@@ -16,12 +19,13 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    
     CommonModule,
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
+    ComponentsModule,
   ],
-  declarations: [Tab4Page]
+  declarations: [Tab4Page],
+  exports: []
 })
 export class Tab4PageModule {}
