@@ -10,9 +10,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { Camera } from '@ionic-native/camera/ngx';
+import { MajorsComponent } from './components/majors/majors.component'
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MajorsComponent],
+  exports: [MajorsComponent], 
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
   providers: [

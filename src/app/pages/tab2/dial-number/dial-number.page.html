@@ -1,0 +1,22 @@
+<ion-content class="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/" text="" icon="close"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <img src="/assets/jobs.jpg" alt="">
+    
+  </ion-card>
+  <ion-text class="time-wrapper">
+    <p>通话时长</p>
+    <p class="time">00:03</p>
+  </ion-text>
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="danger" (click)="getBack()">
+      <ion-icon name="close-circle"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

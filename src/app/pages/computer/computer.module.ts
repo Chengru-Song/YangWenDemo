@@ -5,23 +5,22 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { Tab4Page } from './tab4.page';
-import { AppModule } from '../app.module';
+import { ComputerPage } from './computer.page';
+
 const routes: Routes = [
   {
     path: '',
-    component: Tab4Page
-  },
+    component: ComputerPage
+  }
 ];
 
 @NgModule({
   imports: [
-    
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
+    RouterModule.forChild(routes)
   ],
-  declarations: [Tab4Page]
+  declarations: [ComputerPage]
 })
-export class Tab4PageModule {}
+export class ComputerPageModule {}

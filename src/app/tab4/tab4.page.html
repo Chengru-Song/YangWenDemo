@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>tab4</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="/assets/icon/porter.svg">
+      </ion-avatar>
+      <ion-label>
+        <h2>点击登录</h2>
+      </ion-label>
+    </ion-item>
+  </ion-list>
 
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="3" *ngFor="let major of majors">
+          <app-majors [title]="major.title" [imgUrl]="major.imgUrl" [name]="major.name"></app-majors>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
 </ion-content>

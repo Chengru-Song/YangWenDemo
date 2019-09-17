@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-majors',
@@ -10,10 +11,14 @@ import { Input } from '@angular/core';
 
 export class MajorsComponent implements OnInit {
   @Input() title;
-  @Input() iconname;
+  @Input() imgUrl;
+  @Input() name;
   
-  constructor() { }
+  constructor(public router: Router) { }
 
   ngOnInit() {}
 
+  toMajor(name : string) {
+    this.router.navigate(['/' + name])
+  }
 }

@@ -9,8 +9,18 @@ import { Camera, CameraOptions } from '@ionic-native/camera/ngx';
 export class Tab2Page {
   currentImage: any;
   constructor(private camera : Camera) {}
-  title = '测试title';
-  person = 'person';
+
+  majors = [
+    new Major('computer', '计算机', '/assets/icon/command-line.svg'),
+    new Major('aircraft','航天航空', '/assets/icon/aircraft.svg'),
+    new Major('tour', '旅游管理', '/assets/icon/cocktail.svg'),
+    new Major('phylosophy', '哲学', '/assets/icon/compass.svg'),
+    new Major('economic','经济学', '/assets/icon/hotel.svg'),
+    new Major('land', '地质学', '/assets/icon/map.svg'),
+    new Major('trade', '贸易经济学', '/assets/icon/tickets.svg'),
+    new Major('machine', '机械', '/assets/icon/android.svg')
+  ]
+
   takePicture() {
     const options: CameraOptions = {
       quality: 100,
@@ -27,4 +37,11 @@ export class Tab2Page {
     });
   }
 
+}
+
+class Major {
+  constructor(
+    public name: string,
+    public title: string,
+    public imgUrl: string) { }
 }

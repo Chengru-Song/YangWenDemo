@@ -12,4 +12,17 @@ export class Tab4Page implements OnInit {
   ngOnInit() {
   }
 
+  majors = [
+    new Major('publish', '我的发布', '/assets/icon/news.svg'),
+    new Major('like','我喜欢的', '/assets/icon/like.svg'),
+    new Major('history', '历史记录', '/assets/icon/address-book.svg'),
+    new Major('collection', '我的收藏', '/assets/icon/folder.svg')
+  ]
+}
+
+class Major {
+  constructor(
+    public name: string,
+    public title: string,
+    public imgUrl: string) { }
 }

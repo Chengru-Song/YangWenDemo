@@ -14,5 +14,13 @@
       <ion-icon name="camera"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-  <app-majors [title]="title" [iconname]="person"></app-majors>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" *ngFor="let major of majors">
+        <app-majors [title]="major.title" [imgUrl]="major.imgUrl" [name]="major.name"></app-majors>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
 </ion-content>
